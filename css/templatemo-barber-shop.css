@@ -12,10 +12,10 @@ https://templatemo.com/tm-585-barber-shop
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #d6a354;
-  --secondary-color:              #c12828;
+  --primary-color:                #7e9100;
+  --secondary-color:              #a54d00;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #c12828;
+  --custom-btn-bg-color:          #009f2d;
   --custom-btn-bg-hover-color:    #FDBB2D;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -253,6 +253,12 @@ strong {
   z-index: 9;
 }
 
+.profile-image{
+  width: 54px;
+  height: auto;
+  margin-bottom: 70px;
+}
+
 .logo-image {
   width: 154px;
   height: auto;
@@ -351,7 +357,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/client-doing-hair-cut-barber-shop-salon.jpg');
+  background-image: url('../images/556587f64b02d.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -453,7 +459,7 @@ strong {
   FEATURED               
 -----------------------------------------*/
 .featured-section {
-  background-image: url('../images/barber-customer-giving-high-five.jpg');
+  background-image: url('../images/sports2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -569,7 +575,7 @@ strong {
   BOOKING               
 -----------------------------------------*/
 .booking-section {
-  background-image: url('../images/vintage-chair-barbershop.jpg');
+  background-image: url('../images/sports1.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
