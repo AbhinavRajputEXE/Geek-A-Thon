@@ -223,6 +223,11 @@ strong {
   font-style: italic;
 }
 
+.ai-btn{
+  position: fixed;
+  bottom: 30px;
+}
+
 
 /*---------------------------------------
   NAVIGATION              
@@ -254,9 +259,9 @@ strong {
 }
 
 .profile-image{
-  width: 550px;
+  width: 50px;
   height: auto;
-  margin-bottom: 70px;
+  margin-bottom: 10px;
 }
 
 .logo-image {
@@ -789,10 +794,20 @@ strong {
     padding: 50px 25px;
   }
 
-  .custom-block {
+  .custom-block img,h4{
     display: none;
   }
-  
+
+  .custom-block{
+    border: 0px solid var(--primary-color);
+    border-radius: 0%;
+    position: absolute;
+    z-index: 2;
+    bottom: -60px;
+    right: -130px;
+    padding: 50px 90px 50px 50px;
+  }
+
   .navbar {
     background-color: var(--dark-color);
   }
