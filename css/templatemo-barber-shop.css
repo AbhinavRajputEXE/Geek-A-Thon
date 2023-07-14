@@ -2,42 +2,42 @@
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #7e9100;
-  --secondary-color:              #98c905;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #009f2d;
-  --custom-btn-bg-hover-color:    #FDBB2D;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #B22727;
+  --white-color: #ffffff;
+  --primary-color: #7e9100;
+  --secondary-color: #98c905;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #009f2d;
+  --custom-btn-bg-hover-color: #FDBB2D;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #B22727;
 
-  --body-font-family:             'Unbounded', cursive;
+  --body-font-family: 'Unbounded', cursive;
 
-  --h1-font-size:                 74px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  20px;
-  --btn-font-size:                16px;
-  --copyright-font-size:          14px;
+  --h1-font-size: 74px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 20px;
+  --btn-font-size: 16px;
+  --copyright-font-size: 14px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-thin:             200;
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-bold:             700;
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
 
 
@@ -98,7 +98,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -142,7 +142,7 @@ strong {
   opacity: 0.45;
 }
 
-.section-overlay + .container {
+.section-overlay+.container {
   position: relative;
 }
 
@@ -214,7 +214,7 @@ strong {
   font-style: italic;
 }
 
-.ai-btn{
+.ai-btn {
   position: fixed;
   bottom: 30px;
 }
@@ -249,16 +249,12 @@ strong {
   z-index: 9;
 }
 
-.profile-image{
-  width: 50px;
-  height: auto;
-  margin-bottom: 10px;
-}
 
 .logo-image {
   width: 154px;
   height: auto;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
+  margin-top: 10px;
 }
 
 #sidebarMenu .nav-link {
@@ -269,7 +265,7 @@ strong {
   position: relative;
 }
 
-#sidebarMenu .nav-link.active, 
+#sidebarMenu .nav-link.active,
 #sidebarMenu .nav-link:hover {
   color: var(--white-color);
 }
@@ -598,6 +594,7 @@ strong {
   border-radius: var(--border-radius-medium);
   padding: 0;
   min-height: 200px;
+  margin-bottom: 70px;
 }
 
 .contact-block {
@@ -605,7 +602,7 @@ strong {
   border-radius: var(--border-radius-medium);
   transform: rotate(8deg);
   height: 100%;
-  padding: 20px 40px;
+  padding: 10px 40px;
 }
 
 .contact-block h6 {
@@ -629,6 +626,13 @@ strong {
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.fun-facts-scroll {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 80%;
 }
 
 
@@ -667,6 +671,56 @@ strong {
   border-color: transparent;
 }
 
+/*---------------------------------------
+  LOGIN PROFILE         
+-----------------------------------------*/
+
+.priflileImg {
+  top: 10px;
+  width: 40px;
+}
+
+.popup-card-1 {
+  position: absolute;
+  top: calc(100% + 10px);
+  transform: translateX(-43%);
+  margin-top: 16px;
+  width: 300px;
+  padding: 20px;
+  background-color: #b8d06be2;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 3;
+}
+
+.profile-image-1 {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.name-1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logout-btn-1 {
+  display: block;
+  margin: 0 auto;
+  background-color: #f34b21;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.popup-card-1.show {
+  display: block;
+}
 
 /*---------------------------------------
   SITE FOOTER              
@@ -785,11 +839,12 @@ strong {
     padding: 50px 25px;
   }
 
-  .custom-block img,h4{
+  .custom-block img,
+  h4 {
     display: none;
   }
 
-  .custom-block{
+  .custom-block {
     border: 0px solid var(--primary-color);
     border-radius: 0%;
     position: absolute;
@@ -813,6 +868,20 @@ strong {
 
   .booking-form {
     padding: 45px;
+  }
+
+  .popup-card-1 {
+    position: absolute;
+    top: calc(100% + 10px);
+    transform: translateX(-43%);
+    margin-top: 16px;
+    width: 250px;
+    padding: 20px;
+    background-color: #b8d06be2;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 3;
   }
 }
 
