@@ -349,7 +349,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/556587f64b02d.jpg');
+  background-image: url('../images/home_back.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -370,7 +370,7 @@ strong {
 
 .hero-section::after {
   content: "";
-  background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+  background: linear-gradient(90deg, #fdbb2db6 0%, #22c0c3b5 100%);
   position: absolute;
   top: 0;
   right: 0;
