@@ -504,7 +504,7 @@ strong {
   background-color: lightgreen;
   padding: 20px;
 }
-.container{
+.news_container{
   display: flex;
   align-items: center;
   justify-content: center;
