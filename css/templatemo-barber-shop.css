@@ -457,6 +457,10 @@ strong {
   background-size: cover;
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .featured-section h2 {
@@ -473,6 +477,37 @@ strong {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
+}
+
+.horizontal-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 900px; /* Adjust the width to show only 3 cards at a time */
+}
+
+.horizontal-card h3{
+  font-size: 20px;
+}
+
+.horizontal-card p{
+  font-size: 15px;
+  color: #717275;
+}
+
+.horizontal-card {
+  width: 300px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  padding: 20px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
