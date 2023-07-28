@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
-
 .question {
     font-weight: bold;
 }
@@ -19,11 +18,10 @@
     font-weight: bold;
 }
 
-
 /* Page Design */
 
 * {
-    box-sizing:content-box;
+    box-sizing: content-box;
 }
 
 body {
@@ -47,13 +45,14 @@ body {
     max-width: 100%;
     height: 550px;
     background: rgb(63, 94, 251);
-    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    background: radial-gradient(circle,
+            rgba(63, 94, 251, 1) 0%,
+            rgba(252, 70, 107, 1) 100%);
 }
 
 .quiz-header {
     padding: 6rem;
 }
-
 
 button {
     background-color: #aa84bb;
@@ -76,6 +75,18 @@ button:focus {
     outline: none;
 }
 
-
-
 /* Restart Button */
+
+/* Add responsive styles */
+@media screen and (max-width: 480px) {
+    .quiz-container {
+        height: auto;
+    }
+    .quiz-header {
+        padding: 2rem;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
