@@ -24,8 +24,14 @@
     box-sizing: content-box;
 }
 
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
-    background-image: url(images/bg.jpg);
+    background-color: #314f00;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -35,19 +41,27 @@ body {
     padding-top: 85px;
 }
 
+h1 strong{
+    color: #eec9ff;
+}
+
 .quiz-container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0.95;
     color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
     overflow: hidden;
-    width: 1000px;
+    width: auto;
     max-width: 100%;
-    height: 550px;
-    background: rgb(63, 94, 251);
+    height: auto;
+    background: rgb(0, 189, 145);
     background: radial-gradient(circle,
-            rgba(63, 94, 251, 1) 0%,
-            rgba(252, 70, 107, 1) 100%);
+            rgb(66, 152, 0) 0%,
+            rgb(112, 160, 0) 100%);
 }
 
 .quiz-header {
@@ -55,15 +69,16 @@ body {
 }
 
 button {
-    background-color: #aa84bb;
+    background-color: #9d54be;
     border: none;
     color: white;
     cursor: pointer;
     display: block;
     font-family: inherit;
     font-size: 1.1rem;
-    width: 100%;
+    width: 95%;
     padding: 1.3rem;
+    border-radius: 20px;
 }
 
 button:hover {
@@ -75,16 +90,75 @@ button:focus {
     outline: none;
 }
 
+/* Custom radio button style */
+.options li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .options input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .options label {
+    cursor: pointer;
+    display: flex; /* Use flex to make all labels the same width */
+    align-items: center; /* Center the content vertically */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Adjust this value to control the radius */
+    transition: all 0.3s ease;
+  }
+  
+  .options label:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Custom styles for the radio bubble */
+  .options input[type="radio"] + label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 2px solid #6c63ff; /* Default border color for unselected options */
+    border-radius: 50%; /* Makes the border a circle */
+  }
+  
+  /* Custom styles for the checked radio bubble */
+  .options input[type="radio"]:checked + label::before {
+    background-color: #6c63ff; /* Background color for selected options */
+    border-color: #6c63ff; /* Border color for selected options */
+  }
+  
+  /* Custom styles for the checked radio bubble when it's the correct answer */
+  .options input[type="radio"][data-is-correct="true"]:checked + label::before {
+    background-color: #66bb6a; /* Green color for correct answer */
+    border-color: #66bb6a; /* Border color for correct answer */
+  }
+  
+  /* Custom styles for the checked radio bubble when it's the wrong answer */
+  .options input[type="radio"][data-is-correct="false"]:checked + label::before {
+    background-color: #ef5350; /* Red color for wrong answer */
+    border-color: #ef5350; /* Border color for wrong answer */
+  }
+  
 /* Restart Button */
 
 /* Add responsive styles */
 @media screen and (max-width: 480px) {
+   
     .quiz-container {
         height: auto;
+        margin-top: 1000px;
     }
+
     .quiz-header {
         padding: 2rem;
     }
+
     button {
         font-size: 0.9rem;
         padding: 0.8rem;

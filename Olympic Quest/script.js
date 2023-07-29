@@ -51,14 +51,25 @@ function displayQuestion(question) {
         radio.type = 'radio';
         radio.name = 'answer';
         radio.value = option.value;
+        radio.id = option.value; // Add an ID for the label association
+        radio.dataset.isCorrect = option.isCorrect; // Set data-is-correct attribute
+      
         radio.addEventListener('click', () => {
-            selectedOption = radio.value;
-            disableOptions(option.isCorrect);
+          selectedOption = radio.value;
+          disableOptions(option.isCorrect);
         });
+      
+        // Create a label element and associate it with the radio button using the "for" attribute
+        const label = document.createElement('label');
+        label.setAttribute('for', option.value);
+        label.textContent = option.value;
+      
         li.appendChild(radio);
-        li.appendChild(document.createTextNode(option.value));
+        li.appendChild(label);
         optionsElement.appendChild(li);
-    });
+      });
+      
+
 
     quizContainer.appendChild(optionsElement);
 
@@ -74,9 +85,11 @@ function disableOptions(isCorrectOptionSelected) {
         option.disabled = true;
         if (option.value === selectedOption) {
             option.parentNode.style.backgroundColor = isCorrectOptionSelected ? 'lightgreen' : 'lightcoral';
+            option.parentNode.style.borderRadius = isCorrectOptionSelected ? '20px' : '20px';
             if (!isCorrectOptionSelected) {
                 const correctOption = Array.from(options).find(option => option.value === quizQuestions[currentQuestionIndex].correct_answer);
                 correctOption.parentNode.style.backgroundColor = 'lightgreen';
+                correctOption.parentNode.style.borderRadius = '20px';
             } else {
                 correctCount++;
             }

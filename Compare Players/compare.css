@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3ffc7;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  header {
+    background-color: #006a48;
+    color: #c0ff85;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+  }
+  
+  .player {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 45%;
+    background-color: rgba(102, 255, 0, 0.267);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #006a48;
+    font-weight: bolder;
+  }
+
+  h3{
+    background-color: #55ab00;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(231, 255, 212);
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+  select {
+    appearance: none;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  /* Style the arrow icon */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select::after {
+    content: "\25BC"; /* Unicode arrow down character */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Hover and focus styles */
+  select:hover,
+  select:focus {
+    border-color: #555;
+    outline: none;
+  }
+  
+  /* Disabled style */
+  select:disabled {
+    background-color: #ddd;
+    color: #888;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .player {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
