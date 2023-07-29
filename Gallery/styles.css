@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 10px;
+  background-color: #ffebd4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-section {
+  flex: 1;
+  /* Add a fixed height and enable vertical scrolling */
+  height: auto;
+  overflow-y: scroll;
+  margin: 5px;
+}
+
+.video-section {
+  flex: 1;
+  /* Add a fixed height and enable vertical scrolling */
+  height: auto;
+  overflow-y: scroll;
+  margin: 5px;
+}
+
+/* The rest of the CSS remains the same */
+.gallery-section {
+  background-color: rgba(191, 239, 147, 0.516);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.gallery-section h2 {
+  margin: 20px 0;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-container,
+.video-container {
+  flex: 0 0 calc(50% - 20px);
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-container img,
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-container:hover,
+.video-container:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 830px) {
+  .image-container,
+  .video-container {
+    flex: 0 0 calc(100% - 20px);
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 720px) {
+  .gallery-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-section {
+    background-color: rgba(191, 239, 147, 0.516);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .image-container,
+  .video-container {
+    flex: 0 0 calc(100% - 20px);
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+}
