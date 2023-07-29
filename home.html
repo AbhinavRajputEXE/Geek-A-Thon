@@ -246,8 +246,8 @@ https://templatemo.com/tm-585-barber-shop
                         <div class="row">
 
                             <div class="col-lg-10 col-12 mx-auto">
-                                <form action="#" method="post" class="custom-form booking-form" id="bb-booking-form"
-                                    role="form">
+                                <form action="" method="post" class="contact_form custom-form booking-form" id="bb-booking-form"
+                                    role="form" onsubmit="sendEmail(); reset(); return false;">
                                     <div class="text-center mb-5">
                                         <h2 class="mb-1">Voice Your Opinions</h2>
 
@@ -258,18 +258,18 @@ https://templatemo.com/tm-585-barber-shop
                                         <div class="row">
 
                                             <div class="col-lg-6 col-12">
-                                                <input type="text" name="bb-name" id="bb-name" class="form-control"
+                                                <input type="text" name="bb-name" id="bb-name" class="form-control input"
                                                     placeholder="Full name" required>
                                             </div>
 
                                             <div class="col-lg-6 col-12">
-                                                <input type="tel" class="form-control" name="bb-phone"
-                                                    placeholder="Mobile 010-020-0340"
-                                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+                                                <input type="tel" class="form-control input" name="bb-phone"
+                                                    placeholder="Mobile 9999999999"
+                                                    pattern="[0-9]{10}" required="" id="bb-phone">
                                             </div>
 
                                             <div class="col-lg-6 col-12">
-                                                <input type="text" name="bb-name" id="bb-name" class="form-control"
+                                                <input type="text" name="bb-name" id="bb-email" class="input form-control"
                                                     placeholder="Email" required>
                                             </div>
 
@@ -286,7 +286,7 @@ https://templatemo.com/tm-585-barber-shop
                                         </div>
 
                                         <textarea name="bb-message" rows="3" class="form-control" id="bb-message"
-                                            placeholder="Comment (Optionals)"></textarea>
+                                            placeholder="Comment (Optional)"></textarea>
 
                                         <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                             <button type="submit" class="form-control">Submit</button>
@@ -438,6 +438,8 @@ https://templatemo.com/tm-585-barber-shop
             <script src="js/bootstrap.min.js"></script>
             <script src="js/click-scroll.js"></script>
             <script src="js/custom.js"></script>
+            <script src="js/contact.js"></script>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
 
             <script>
                 let params = {}
