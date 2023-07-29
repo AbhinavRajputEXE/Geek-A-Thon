@@ -3,12 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3ffc7;
+    background: rgb(251,63,119);
+    background: radial-gradient(circle, rgba(251,63,119,1) 0%, rgba(255,181,0,1) 100%); 
     font-family: 'Raleway', sans-serif;
   }
   
   header {
-    background-color: #006a48;
+    background: rgb(74,182,255);
+    background: linear-gradient(0deg, rgba(74,182,255,0) 0%, rgb(223, 89, 0) 67%); 
     color: #c0ff85;
     text-align: center;
     padding: 10px 0;
@@ -26,11 +28,10 @@ body {
   }
   
   .player {
-    border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     width: 45%;
-    background-color: rgba(102, 255, 0, 0.267);
+    background-color: rgba(0, 228, 65, 0.372);
   }
   
   h2 {

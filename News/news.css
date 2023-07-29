@@ -3,8 +3,9 @@
 body {
     margin: 0;
     padding: 10px;
-    font-family: Arial, sans-serif;
-    background-color: #f3ffc7;
+    font-family: Arial, sans-serif; 
+    background: rgb(216,238,174);
+    background: radial-gradient(circle, rgba(216,238,174,1) 0%, rgba(233,188,148,1) 100%); 
     font-family: 'Raleway', sans-serif;
 }
 
@@ -19,9 +20,8 @@ body {
     /* Adjust this for appropriate spacing between boxes */
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: rgba(102, 255, 0, 0.267);
+    background-color: rgba(102, 168, 40, 0.564);
 }
 
 /* Add new styles */
@@ -30,6 +30,7 @@ body {
     padding: 20px;
     font-size: 54px;
     font-weight: bold;
+    color: rgb(39, 39, 39);
 }
 
 .news-image {

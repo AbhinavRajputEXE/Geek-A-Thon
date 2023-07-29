@@ -4,7 +4,8 @@ body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 10px;
-  background-color: #ffebd4;
+  background: rgb(249,255,130);
+  background: linear-gradient(266deg, rgba(249,255,130,1) 0%, rgba(203,155,0,1) 67%); 
   display: flex;
   flex-wrap: wrap;
 }
@@ -33,7 +34,7 @@ body {
 
 /* The rest of the CSS remains the same */
 .gallery-section {
-  background-color: rgba(191, 239, 147, 0.516);
+  background-color: rgba(23, 196, 0, 0.396);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
