@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f3ffc7;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-box {
+    width: 48%;
+    /* Adjust this for appropriate spacing between boxes */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(102, 255, 0, 0.267);
+}
+
+/* Add new styles */
+.page-heading {
+    text-align: center;
+    padding: 20px;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.news-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.news-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.news-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.expand-btn {
+    display: none;
+    cursor: pointer;
+    color: blue;
+}
+
+.expanded {
+    display: block;
+}
+
+/* Existing CSS */
+
+/* Add new styles */
+.news-source {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.news-source-image {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.news-source-name {
+    font-weight: bold;
+}
+
+/* Existing CSS */
+
+/* Add new styles */
+.news-date {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    margin: 10px;
+}
+
+/* Rest of the CSS remains the same */
+
+/* Existing CSS */
+
+/* Add new styles */
+.learn-more-btn {
+    display: block;
+    text-align: center;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 850px) {
+    .news-box {
+        width: auto;
+    }
+  }
