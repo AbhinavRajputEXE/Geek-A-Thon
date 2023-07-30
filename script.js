@@ -7,7 +7,7 @@ function signIn() {
 
     let params={
         'client_id': '941348030676-7vgban26e5ve72u8oep724oru483g052.apps.googleusercontent.com',
-        'redirect_uri': 'http://127.0.0.1:5500/home.html',
+        'redirect_uri': 'https://athletix.netlify.app/home.html',
         'response_type': 'token',
         "scope": "https://www.googleapis.com/auth/userinfo.profile",
         "include_granted_scopes": "true",
