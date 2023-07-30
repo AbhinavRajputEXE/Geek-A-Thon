@@ -1,4 +1,4 @@
-const apiUrl = 'https://sportscore1.p.rapidapi.com/players'; // Modify this to the appropriate API endpoint
+const apiUrl = 'https://sportscore1.p.rapidapi.com/players';
 const apiHeaders = {
     'X-RapidAPI-Key': '072c1fca36msh5131799fa3240efp196bbbjsnaac205374554',
     'X-RapidAPI-Host': 'sportscore1.p.rapidapi.com'
@@ -9,7 +9,7 @@ async function fetchPlayers() {
     try {
         const response = await fetch(apiUrl, { headers: apiHeaders });
         const data = await response.json();
-        return data.data; // Assuming the API response contains an array of players
+        return data.data; 
     } catch (error) {
         console.error(error);
         return [];
@@ -24,18 +24,17 @@ function populateDropdown(playerList, dropdownId) {
     for (const player of playerList) {
         const option = document.createElement('option');
         option.value = player.id;
-        option.textContent = player.name; // Assuming the API response contains the player name
+        option.textContent = player.name; 
         dropdown.appendChild(option);
     }
 }
 
-// Function to fetch player data from the API based on the selected player's ID
 async function fetchPlayerData(playerId) {
     try {
         const url = `${apiUrl}/${playerId}/statistics?page=1`;
         const response = await fetch(url, { headers: apiHeaders });
         const data = await response.json();
-        return data.data[0]; // Assuming data contains information of only one player for simplicity
+        return data.data[0]; 
     } catch (error) {
         console.error(error);
         return null;

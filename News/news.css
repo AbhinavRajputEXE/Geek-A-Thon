@@ -17,7 +17,6 @@ body {
 
 .news-box {
     width: 48%;
-    /* Adjust this for appropriate spacing between boxes */
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
@@ -92,11 +91,6 @@ body {
     margin: 10px;
 }
 
-/* Rest of the CSS remains the same */
-
-/* Existing CSS */
-
-/* Add new styles */
 .learn-more-btn {
     display: block;
     text-align: center;

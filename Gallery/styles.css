@@ -18,7 +18,6 @@ body {
 
 .image-section {
   flex: 1;
-  /* Add a fixed height and enable vertical scrolling */
   height: auto;
   overflow-y: scroll;
   margin: 5px;
@@ -26,13 +25,11 @@ body {
 
 .video-section {
   flex: 1;
-  /* Add a fixed height and enable vertical scrolling */
   height: auto;
   overflow-y: scroll;
   margin: 5px;
 }
 
-/* The rest of the CSS remains the same */
 .gallery-section {
   background-color: rgba(23, 196, 0, 0.396);
   border-radius: 10px;

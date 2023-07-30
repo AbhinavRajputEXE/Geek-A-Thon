@@ -124,7 +124,7 @@ button:focus {
     margin-right: 10px;
     display: inline-block;
     border: 2px solid #6c63ff; /* Default border color for unselected options */
-    border-radius: 50%; /* Makes the border a circle */
+    border-radius: 50%; 
   }
   
   /* Custom styles for the checked radio bubble */
@@ -139,7 +139,6 @@ button:focus {
     border-color: #66bb6a; /* Border color for correct answer */
   }
   
-  /* Custom styles for the checked radio bubble when it's the wrong answer */
   .options input[type="radio"][data-is-correct="false"]:checked + label::before {
     background-color: #ef5350; /* Red color for wrong answer */
     border-color: #ef5350; /* Border color for wrong answer */
