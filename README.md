@@ -33,11 +33,11 @@ Athletix is your ultimate digital companion to the Olympic Games, providing real
 
 ## Refrences
 
-Open Trivia Database - Used for the Olympic Quiz feature to fetch trivia questions related to the Olympics.
-Pexels API - Used for the Olympic Gallery feature to access a collection of stunning images capturing iconic moments and athletes in action.
-OpenAI API - Used for the Athletix AI bot, providing real-time responses and enhancing user interactions.
-Google OAuth - Used for user authentication and login process.
+1. Open Trivia Database - Used for the Olympic Quiz feature to fetch trivia questions related to the Olympics.
+2. Pexels API - Used for the Olympic Gallery feature to access a collection of stunning images capturing iconic moments and athletes in action.
+3. OpenAI API - Used for the Athletix AI bot, providing real-time responses and enhancing user interactions.
+4. Google OAuth - Used for user authentication and login process.
 
 # Icons and Images:
 
-FontAwesome - Used for icons and graphics in the Athletix web application.
+1. FontAwesome - Used for icons and graphics in the Athletix web application.
